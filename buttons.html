@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1"> <!--scales the viewport ready for mobile device-->
+<link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed" rel="stylesheet">
+<!--[if lte IE 8]>
+<script src="scripts/html5shiv.js"
+</script>
+<![endif]--> <!--check if IE 8 or lower if so then script creates html5 elements -->
+<title> Laze Holidays Pattern Library Buttons</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">    
+</head>
+<body>
+    <div id="wrapper" class="col-16">
+    <header id="headerMain" class="col-16 row"><!--display inline block-->
+        <a href="index.html"> <img id="logo" src="assets/fullLogoLong.jpg" alt="Lazy Logo" class="col-10"> </a><!--lazy spelt this way for accessibility -->
+        <h1 class="col-4">Pattern Library</h1>
+    </header> <!-- insert bottom border -->
+    <nav id="navMain" class="col-3 row" > <!--float left-->
+        <ul>
+            <li><a href="navigation.html">Navigation Bar</a></li>
+            <li><a href="headerElement.html">Header Element</a></li>
+            <li><a href="buttons.html">Button Types</a></li>
+            <li><a href="callToAction.html">Call To Action</a></li>
+            <li><a href="footer.html">Footer</a></li>
+            <li><a href="colours.html">Colours</a></li>
+        </ul>
+    </nav>
+    <section id="sectionMain" class="col-11"> <!-- float right-->
+        <header id="sectionHeader" class="col-12 row">
+             <h2>Button Element</h2>
+            <h3>The Header element is used to allow the customer to contact Laze Holidays via call, live chat or email in addition the basket is always viewable in the right top corner.</h3>
+        </header>
+        <section class="examples col-12">
+            <h3>Examples</h3>
+            <div id="buttonExample" class="col-12">
+                <p class="nBord strong">View Button</p>
+                <div class="icon1">
+                    <img id="viewButton" src="assets/1x/viewButton.jpg" alt="view button">
+                    </div>
+                    <p class="nBord strong">Buy Button</p>
+                    <div class="icon9">
+                    <img id="buyButton" src="assets/1x/buy-100.jpg" alt="buy button">
+                    </div>
+                <p class="nBord strong">Add to Planner</p>
+                <div class="icon5">
+                    <img id="addPlanner" src="assets/1x/addPlannerNon.jpg" alt="DD PLnnwe chat icon unactive">
+                    <div class="addPlannerOver">
+                    </div>
+                </div>
+                <p class="nBord strong">Play</p>
+                <div class="icon6">
+                    <img id="play" src="assets/1x/play-100.jpg" alt="play icon unactive">
+                    <div class="playOver">
+                    </div>
+                </div>
+            <p class="nBord strong">Pause</p>
+                <div class="icon7">
+                    <img id="pause" src="assets/1x/pause-100.jpg" alt="pause icon unactive">
+                    <div class="pauseOver">
+                    </div>
+                </div>
+            <p class="nBord strong">Pause</p>
+                <div class="icon8">
+                    <img id="stop" src="assets/1x/stop-100.jpg" alt="stop icon unactive">
+                    <div class="stopOver">
+                    </div>
+                </div>
+                </div> <!--end icon1-->
+            
+        </section> <!--END OF EXAMPLES -->
+        <section id="headerCodeSection" class="col-11">
+            <h3>HTML &#38; SASS </h3>
+             <p class="strong"> HTML </p>
+            <div class="headerCode col-14">
+            <textarea class="code">
+                <input id="viewButton" type="submit" value="View">
+            </textarea>
+            </div> <!--END HEADERCODE -->
+        <!--NEW SASS SECTION-->
+            <p class="strong">SASS</p>
+            <div class="headerCode col-14">
+            <textarea class="code">
+                #viewButton {
+                color: white;
+                background-color: #335c7f;
+                border: none;
+                box-shadow: 2px 2px 8px #888888;
+                border-radius: 3px;
+            }
+
+            </textarea>
+            </div> <!--END HEADERCODE -->
+        </section>
+        <section id="bestPractices" class="col-14">
+        <h3>Best practices </h3>
+            <p class="strong">Buttons should be: </p>
+            <ul>
+                <li>Positioned at the bottom center of a form</li>
+                <li>Located next to the relevant element</li>
+                <li>Used for making a functional change to the website </li>
+                <li>Add to Planner button must be located at the top right of an image</li>
+                <li>Grouped together by relation</li>
+            </ul>
+        </section>
+        <section id="contentGuidelines" class="col-14">
+        <h3>Content guidelines </h3>
+            <p class="strong">Button content should folllow these rules: </p>
+            <ul>
+                <li>The button text must be self-explanatory for the action it preforms</li>
+                <li>Include a drop Shadow on a tradition button</li>
+                <li>Use visual cues to demonstrate that the element is button</li>
+                <li>The text must contrast with the background colour</li>
+                <li> Video buttons must display the oppisite button to the status of the video</li>
+                
+                
+            </ul>
+        </section>
+    </section> <!--section main end-->
+    </div> <!--wrapper End-->
+    
+</body>
+</html>

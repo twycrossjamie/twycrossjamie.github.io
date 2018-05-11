@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1"> <!--scales the viewport ready for mobile device-->
+<link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed" rel="stylesheet">
+<!--[if lte IE 8]>
+<script src="scripts/html5shiv.js"
+</script>
+<![endif]--> <!--check if IE 8 or lower if so then script creates html5 elements -->
+<title> Laze Holidays Pattern Library Navigation </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">    
+</head>
+<body>
+    <div id="wrapper" class="col-16">
+    <header id="headerMain" class="col-16 row"><!--display inline block-->
+        <a href="index.html"> <img id="logo" src="assets/fullLogoLong.jpg" alt="Lazy Logo" class="col-10"> </a> <!--lazy spelt this way for accessibility -->
+        <h1 class="col-4">Pattern Library</h1>
+    </header> <!-- insert bottom border -->
+    <nav id="navMain" class="col-3 row" > <!--float left-->
+        <ul>
+            <li><a href="navigation.html">Navigation Bar</a></li>
+            <li><a href="headerElement.html">Header Element</a></li>
+            <li><a href="buttons.html">Button Types</a></li>
+            <li><a href="callToAction.html">Call To Action</a></li>
+            <li><a href="footer.html">Footer</a></li>
+            <li><a href="colours.html">Colours</a></li>        
+        </ul>
+    </nav>
+    <section id="sectionMain" class="col-11"> <!-- float right-->
+        <header id="sectionHeader" class="col-12 row">
+            <h2>Navigation Element</h2>
+            <h3>The navigation element is used to allow the customer to explore the web site looking to achieve a certain task.</h3>
+        </header>
+        <section class="examples col-12">
+            <h3>Examples</h3>
+            <div id="navigationExample" class="col-12">
+            <nav id="navExample">
+            <ul>
+                <li class="strong">Destination</li>
+                <li class="strong">Holiday Types</li>
+                <li class="strong">Offers</li>
+                <li class="strong">Inspiration</li>
+                <li class="strong">About Us</li>
+            </ul>    
+            </nav>   
+
+            </div> <!--END OF NAVIGATION EXAMPLES -->
+        </section> <!--END OF EXAMPLES -->
+        <section id="headerCodeSection" class="col-11">
+            <h3>HTML &#38; SASS </h3>
+             <p class="strong"> HTML </p>
+            <div class="headerCode col-14">
+            <textarea class="code">
+            <!--INSERT CODE-->
+                <div id="navigationExample" class="col-12">
+            <nav id="navExample">
+            <ul>
+                <li class="strong">Destination</li>
+                <li class="strong">Holiday Types</li>
+                <li class="strong">Offers</li>
+                <li class="strong">Inspiration</li>
+                <li class="strong">About Us</li>
+            </ul>    
+            </nav>   
+
+            </div> <!--END OF NAVIGATION EXAMPLES -->
+            </textarea>
+            </div> <!--END HEADERCODE -->
+        <!--NEW SASS SECTION-->
+            <p class="strong">SASS</p>
+            <div class="headerCode col-14">
+            <textarea class="code">
+            <!--INSERT CODE-->
+                #navExample {
+        ul {
+           list-style-type: none; 
+        }
+        li {
+            float: left;
+            padding-left: 5%;
+        }   
+    }
+    
+    
+    
+    #navExample ul li:hover {
+        text-decoration: underline;
+        font-weight: bold;
+        text-decoration-color: $lb;
+    }
+    #navExample ul li:active {
+        text-decoration: underline;
+        font-weight: bold;
+        color: white;
+    }
+            </textarea>
+            </div> <!--END HEADERCODE -->
+        </section>
+        <section id="bestPractices" class="col-14">
+        <h3>Best practices </h3>
+            <p class="strong">Navigation should be: </p>
+            <ul>
+                <li>Be position at the top of the page</li>
+                <li>Include links to the required page</li>
+                <li>Descriptive </li>
+                <li>Always show the link that is active</li>
+                <li>Highlight the hovered link</li>
+            </ul>
+        </section>
+        <section id="contentGuidelines" class="col-14">
+        <h3>Content guidelines </h3>
+            <p class="strong">Header content should folllow these rules: </p>
+            <ul>
+                <li>The format of links should be Destination, Holday types, Offers, Inspiration and About Us</li>
+                <li>The navigation links should always contrast with the background its recommended to use black or white font colour</li>
+                <li>The navigation bar iteself had a transparent background</li>
+            </ul>
+        </section>
+    </section> <!--section main end-->
+    </div> <!--wrapper End-->
+    
+</body>
+</html>

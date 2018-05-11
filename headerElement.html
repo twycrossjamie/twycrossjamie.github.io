@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1"> <!--scales the viewport ready for mobile device-->
+<link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed" rel="stylesheet">
+<!--[if lte IE 8]>
+<script src="scripts/html5shiv.js"
+</script>
+<![endif]--> <!--check if IE 8 or lower if so then script creates html5 elements -->
+<title> Laze Holidays Pattern Library Header</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">    
+</head>
+<body>
+    <div id="wrapper" class="col-16">
+    <header id="headerMain" class="col-16 row"><!--display inline block-->
+        <a href="index.html"> <img id="logo" src="assets/fullLogoLong.jpg" alt="Lazy Logo" class="col-10"> </a><!--lazy spelt this way for accessibility -->
+        <h1 class="col-4">Pattern Library</h1>
+    </header> <!-- insert bottom border -->
+    <nav id="navMain" class="col-3 row" > <!--float left-->
+        <ul>
+            <li><a href="navigation.html">Navigation Bar</a></li>
+            <li><a href="headerElement.html">Header Element</a></li>
+            <li><a href="buttons.html">Button Types</a></li>
+            <li><a href="callToAction.html">Call To Action</a></li>
+            <li><a href="footer.html">Footer</a></li>
+            <li><a href="colours.html">Colours</a></li>
+        </ul>
+    </nav>
+    <section id="sectionMain" class="col-11"> <!-- float right-->
+        <header id="sectionHeader" class="col-12 row">
+            <h2>Header Element</h2>
+            <h3>The Header element is used to allow the customer to contact Laze Holidays via call, live chat or email in addition the basket is always viewable in the right top corner.</h3>
+        </header>
+        <section class="examples col-12">
+            <h3>Examples</h3>
+            <div id="headerExample" class="col-12">
+                <div class="icon1">
+                    <img id="callNon" src="assets/1x/callNon.jpg" alt="call icon unactive">
+                    <div class="icon1Over">
+                    </div>
+                </div> <!--end icon1-->
+                <p class="nBord">Call</p>
+                <div class="icon2">
+                    <img id="liveChatNon" src="assets/1x/liveChatNon.jpg" alt="live chat icon unactive">
+                    <div class="icon2Over">
+                    </div>
+                </div>
+                <p class="nBord">Live Chat</p>
+                <div class="icon3">
+                    <img id="emailNon" src="assets/1x/emailNon.jpg" alt="email icon unactive">
+                    <div class="icon3Over">
+                    </div>
+                </div>
+                <p class="nBord" >Email</p>
+                 <div class="icon4">
+                    <img id="basketNon" src="assets/1x/basketNon.jpg" alt="basket icon unactive">
+                    <div class="icon4Over">
+                    </div>
+                </div> 
+
+            </div> <!--END OF HEADER EXAMPLES -->
+        </section> <!--END OF EXAMPLES -->
+        <section id="headerCodeSection" class="col-11">
+            <h3>HTML &#38; SASS </h3>
+             <p class="strong"> HTML </p>
+            <div class="headerCode col-14">
+            <textarea class="code">
+            <div id="headerExample" class="col-12">
+                <div class="icon1">
+                    <img id="callNon" src="assets/1x/callNon.jpg" alt="call icon unactive">
+                    <div class="icon1Over">
+                    </div>
+                </div> <!--end icon1-->
+                <p class="nBord">Call</p>
+                <div class="icon2">
+                    <img id="liveChatNon" src="assets/1x/liveChatNon.jpg" alt="live chat icon unactive">
+                    <div class="icon2Over">
+                    </div>
+                </div>
+                <p class="nBord">Live Chat</p>
+                <div class="icon3">
+                    <img id="emailNon" src="assets/1x/emailNon.jpg" alt="email icon unactive">
+                    <div class="icon3Over">
+                    </div>
+                </div>
+                <p class="nBord" >Email</p>
+                 <div class="icon4">
+                    <img id="emailNon" src="assets/1x/basketNon.jpg" alt="basket icon unactive">
+                    <div class="icon4Over">
+                    </div>
+                </div> 
+
+            </div> <!--END OF HEADER EXAMPLES -->
+            </textarea>
+            </div> <!--END HEADERCODE -->
+        <!--NEW SASS SECTION-->
+            <p class="strong">SASS</p>
+            <div class="headerCode col-14">
+            <textarea class="code">
+            #headerExample {
+        padding-top: 2.5%;
+        height: 150px;
+        img {
+            padding-top: 15%;
+            margin-left: 10%;
+            width: 100%;
+        }
+        
+        
+        .icon1 {
+            position: relative;
+            float: left;
+            
+        }
+        .icon1Over {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left:0;
+            right: 0;
+            margin-left: 10%;
+            margin-top: 15%;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .3s ease;
+            background-image: url(../assets/1x/callA.jpg);
+            background-repeat: no-repeat;
+        }
+        .icon1:hover .icon1Over {
+            opacity: 1;
+        }
+            </textarea>
+            </div> <!--END HEADERCODE -->
+        </section>
+        <section id="bestPractices" class="col-14">
+        <h3>Best practices </h3>
+            <p class="strong">Header should be: </p>
+            <ul>
+                <li>Be position at the top of the page</li>
+                <li>Include links to the required function</li>
+                <li>Not be used for promotion material or detailed information </li>
+                <li>Always include the checkout basket</li>
+            </ul>
+        </section>
+        <section id="contentGuidelines" class="col-14">
+        <h3>Content guidelines </h3>
+            <p class="strong">Header content should folllow these rules: </p>
+            <ul>
+                <li>The format of functions should be call, live chat, email then checkout basket</li>
+                <li>Links should placed centered right of the icons with a maximum of a 3% gap </li>
+                
+            </ul>
+        </section>
+    </section> <!--section main end-->
+    </div> <!--wrapper End-->
+    
+</body>
+</html>

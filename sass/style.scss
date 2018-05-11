@@ -1,0 +1,486 @@
+$max_width: 100%;
+$max_cols: 16;
+$single_col: $max_width / $max_cols;
+$margin-left: 100%;
+$green: #006837;
+$db:  #0d4b7f;
+$llb: #66b8ff;
+$lb: #1995ff;
+$dbl: #335c7f;
+$b: #1477cc;
+$h1: 2em; /*32/16*/
+$h2: 1.75em; /*28/16*/
+$h3: 1.5em; /*24/16*/
+
+
+@for $i from 1 through 16 {
+    /** on the first loop i = 1 and iterates up to 16 
+        on each loop 
+    ***/
+    .col-#{$i} {
+        width: $single_col * $i
+    }
+}
+
+@for $i from 1 through 16 {
+    .offset-#{$i} {
+        margin-left: $single_col *$i
+    }
+    ;
+}
+
+* {
+    box-sizing: border-box;
+    }
+
+.row {
+    content: "";
+    clear: both;
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    }
+
+/*reset the browsers defaults*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+} /*---------------------------------resets browser defualt settings */
+    
+   
+   /* @media screen and (min-width: 600px) *//*{  media query 600px */
+    /*
+        #social_media a {
+            -webkit-margin-left: 6.25%; //set for google chrome browsers
+            -moz-margin-left: 6.25%;
+            -ms-margin-left: 12.5%;
+            margin-left: 6.25%;
+        }
+    }*/
+#wrapper {
+    //width: 90%;
+    margin: 0 auto;
+}
+#headerMain {
+   // width: 100%;
+    display: inline-block;
+    height: 180px;
+    background-color: white;
+    
+    img {
+        max-width: 40%;
+        float: left;
+        display: inline;
+    }
+    h1 {
+        float: left;
+        display: inline;
+        padding-top: 5%;
+        font-size: $h1;
+        color: $dbl;
+    }
+}
+
+#navMain {
+    float: left;
+   // width:40%; 
+    height: 500px;
+    margin-left: 5%;
+    
+    ul {
+        background-color: $db;
+        list-style-type: none;
+        padding-bottom: 5%;
+    }
+   
+    li {
+        padding-top: 5%;
+        font-size: $h3;
+        a {
+            color: white;
+            margin-left: 5%;
+            
+        }
+    }
+    
+    li a:hover {
+        text-decoration: underline;
+        font-weight: bold;
+        text-decoration-color: $lb;
+    }
+    
+}
+#sectionMain {
+    float: left;
+    //width: 40%;
+    height: auto;
+    margin-left: 5%;
+    padding-bottom: 50px;
+    
+    h2 {
+        font-size: $h2;
+        border-bottom: 2px solid $db;
+    }
+    h3 {
+        padding-top: 2%;
+        font-size: $h3; 
+    }
+    
+    .examples {
+        h3 {
+        padding-top: 2%;
+        font-size: $h3; 
+        border-bottom: 2px solid $b;
+    }  
+    }
+    #headerExample {
+        padding-top: 2.5%;
+        height: 150px;
+        img {
+            //padding-left: 5%;
+            padding-top: 15%;
+            margin-left: 10%;
+            width: 100%;
+        }
+        
+        
+        .icon1 {
+            position: relative;
+            float: left;
+            
+        }
+        .icon1Over {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left:0;
+            right: 0;
+            margin-left: 10%;
+            margin-top: 15%;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .3s ease;
+            background-image: url(../assets/1x/callA.jpg);
+            background-repeat: no-repeat;
+        }
+        .icon1:hover .icon1Over {
+            opacity: 1;
+        }
+        .icon2 {
+            position: relative;
+            float: left;
+            margin-left: 2%;
+            max-width: 100%;
+        }
+        .icon2Over {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left:0;
+            right: 0;
+            margin-left: 10%;
+            margin-top: 15%;
+            max-height: 100%;
+            max-width: 100%;
+            opacity: 0;
+            transition: .3s ease;
+            background-image: url(../assets/1x/liveChatA.jpg);
+            background-repeat: no-repeat;
+        }
+        .icon2:hover .icon2Over {
+            opacity: 1;
+        }
+        .icon3 {
+            position: relative;
+            float: left;
+            margin-left: 2%;
+            max-width: 100%;
+        }
+        .icon3Over {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left:0;
+            right: 0;
+            margin-left: 10%;
+            margin-top: 15%;
+            max-height: 100%;
+            max-width: 100%;
+            opacity: 0;
+            transition: .3s ease;
+            background-image: url(../assets/1x/emailA.jpg);
+            background-repeat: no-repeat;
+        }
+        .icon3:hover .icon3Over {
+            opacity: 1;
+        }
+        .icon4 {
+            position: relative;
+            float: left;
+            margin-left: 2%;
+            max-width: 100%;
+        }
+        .icon4Over {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left:0;
+            right: 0;
+           margin-left: 10%;
+            margin-top: 15%;
+            max-height: 100%;
+            max-width: 100%;
+            opacity: 0;
+            transition: .3s ease;
+            background-image: url(../assets/1x/basketA.jpg);
+            background-repeat: no-repeat;
+        }
+        .icon4:hover .icon4Over {
+            opacity: 1;
+        }
+        .nBord {
+            border-bottom: 0px;
+            float: left;
+            margin-top: 7.5%;
+            margin-left: 2%;
+        }
+    }
+    
+    #headerCodeSection {
+        height: 750px;    
+        h3 {
+        padding-top: 2%;
+        font-size: $h3; 
+        border-bottom: 2px solid $b;
+    }  
+    }
+    .headerCode {
+        margin-top: 2.5%;
+        height: 300px;
+        background-color: grey;
+        margin-left: 2.5%;
+    }
+    
+    .code {
+        background-color: black;
+        color: blue;
+        min-width: 90%;
+        min-height: 100%;
+        margin-left: 5%;
+    }
+    
+    #bestPractices {
+        h3 {
+            padding-top: 2%;
+            font-size: $h3; 
+            border-bottom: 2px solid $b;
+            margin-bottom: 2%;
+        }
+    } 
+    #contentGuidelines {
+        margin-bottom: 5%;
+          h3 {
+            padding-top: 2%;
+            font-size: $h3; 
+            border-bottom: 2px solid $b;
+            margin-bottom: 2%;
+        }
+    }
+    #navigationExample {
+        margin-bottom: 10%;
+        margin-top: 5%;
+    }
+    #navExample {
+        ul {
+           list-style-type: none; 
+        }
+        li {
+            float: left;
+            padding-left: 5%;
+        }   
+    }
+    
+    
+    
+    #navExample ul li:hover {
+        text-decoration: underline;
+        font-weight: bold;
+        text-decoration-color: $lb;
+    }
+    #navExample ul li:active {
+        text-decoration: underline;
+        font-weight: bold;
+        color: white;
+    }
+    #colourCodes {
+    text-align: center;
+    box-sizing: border-box;
+    background-color: white;
+    width: 98%;
+    height: 150px;
+    margin: auto;
+    margin-top: 2%;
+}
+
+
+.colourBox{
+    width: 15%;
+    height: 45%;;
+    background-color: #0d4b7f;
+    float: left;
+    margin-left: 4.2%;
+    margin-top: 2%;
+}
+
+#c1 {
+  background-color: #0d4b7f;
+}
+#c2 {
+  background-color: #66b8ff;
+}
+#c3 {
+  background-color: #1995ff;
+}
+#c4 {
+  background-color: #335c7f;
+}
+#c5 {
+  background-color: #1477cc;
+}
+.cd {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding-top: 25%;
+}
+    #buttonExample {
+        margin-top: 2%;
+        height: 100px;
+    }
+    .icon5 {
+            position: relative;
+            margin-left: 2%;
+            max-width: 30%;
+            margin-bottom: 5%;
+            margin-top: 2%;
+        }
+        .addPlannerOver {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left:0;
+            right: 0;
+            max-height: 100%;
+            max-width: 100%;
+            opacity: 0;
+            transition: .3s ease;
+            background-image: url(../assets/1x/addPlannerA.jpg);
+            background-repeat: no-repeat;
+        }
+        .icon5:hover .addPlannerOver {
+            opacity: 1;
+        }
+    
+.icon6 {
+            position: relative;
+            margin-left: 2%;
+            max-width: 30%;
+            margin-bottom: 5%;
+            margin-top: 2%;
+        }
+        .playOver {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left:0;
+            right: 0;
+            max-height: 100%;
+            max-width: 100%;
+            opacity: 0;
+            transition: .3s ease;
+            background-image: url(../assets/1x/playA-100.jpg);
+            background-repeat: no-repeat;
+        }
+        .icon6:hover .playOver {
+            opacity: 1;
+        }
+    .icon7 {
+            position: relative;
+            margin-left: 2%;
+            max-width: 30%;
+            margin-bottom: 5%;
+            margin-top: 2%;
+        }
+        .pauseOver {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left:0;
+            right: 0;
+            max-height: 100%;
+            max-width: 100%;
+            opacity: 0;
+            transition: .3s ease;
+            background-image: url(../assets/1x/pauseA-100.jpg);
+            background-repeat: no-repeat;
+        }
+        .icon7:hover .pauseOver {
+            opacity: 1;
+        }
+    .icon8 {
+            position: relative;
+            margin-left: 2%;
+            max-width: 30%;
+            margin-bottom: 5%;
+            margin-top: 2%;
+        }
+        .stopOver {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left:0;
+            right: 0;
+            max-height: 100%;
+            max-width: 100%;
+            opacity: 0;
+            transition: .3s ease;
+            background-image: url(../assets/1x/stopA-100.jpg);
+            background-repeat: no-repeat;
+        }
+        .icon8:hover .stopOver {
+            opacity: 1;
+        }
+    .icon9 {
+        margin-bottom: 5%;
+        height: 50px;
+        display: block;
+    }
+    #buttonExample {
+        height: 750px;
+    }
+}
+.strong {
+    font-weight: bold;
+}
+    
+
